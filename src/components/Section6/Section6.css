@@ -1,0 +1,23 @@
+.partners-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.partners-section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.partners-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.partners-logos img {
+    width: 300px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}

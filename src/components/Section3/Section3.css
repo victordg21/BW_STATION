@@ -1,0 +1,93 @@
+.Container3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section3Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    font-family: 'SFProDisplay', sans-serif;
+    width: 50vw;
+}
+
+.section3Container h3 {
+    font-size: 3rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.section3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background: #fff;
+}
+
+.card {
+    display: flex;
+    width: 15vw;
+    height: 25vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.imagesSection3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.imagesSection3:last-child{
+    margin-bottom: 50px;
+}
+
+.imagesCards img {
+    width: 40vw;
+}
+
+@media (max-width: 960px) {
+    .section3Container {
+        width: 90vw; 
+    }
+
+    .section3Container h3 {
+        font-size: 2rem; 
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .section3 {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+
+    .card {
+        width: 70vw; 
+        height: auto;
+    }
+
+    .imagesCards img {
+        width: 80vw; 
+    }
+}

@@ -1,0 +1,21 @@
+.ContainerSection5 {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  
+  .ContainerSection5 video {
+    width: 95%;
+    display: block;
+  }
+
+  @media (max-width: 768px){
+    .ContainerSection5 video {
+      width: 100%;
+      
+    }
+  }
+  

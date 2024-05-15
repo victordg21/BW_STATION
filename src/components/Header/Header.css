@@ -1,0 +1,198 @@
+.ContainerHeader{
+  background-color: #000;
+}
+
+.header-container {
+  margin: 0 auto;
+  text-align: center; 
+}
+
+.centralized-div{
+  display: flex;
+}
+
+.header {
+  display: flex;
+  position: relative;
+  font-family: 'SFProDisplay', sans-serif;
+  padding: 10px 0;
+}
+
+.header-bg {
+  background-color: #181818;
+  
+}
+
+.logoHeader {
+  flex: 0 1 auto;
+}
+
+.logoHeader img {
+  height: 20px;
+  vertical-align: middle;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center; 
+  flex-grow: 1;
+}
+
+.menu-item {
+  margin: 0 25px;
+}
+
+.menu-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.menu-item a:hover, .menu-item a:focus {
+  color: #028fe0;
+  transform: scale(1.1);
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #181818;
+  color: white;
+  width: 100vw;
+  padding: 20px;
+  left: 0;
+  top: 100%;
+  z-index: 999;
+  text-align: left;
+}
+
+.submenu.active {
+  display: block;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+
+}
+
+.submenu div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.submenu p {
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.submenu div li {
+  list-style-type: none;
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin-top: 5px;
+  
+}
+
+.submenu div a {
+  text-decoration: none;
+  color: white;
+  
+}
+
+@media (min-width: 769px) {
+  .toggle-button {
+    display: none;
+  }
+
+  .menu-item:hover .submenu {
+    display: block; /* Ensure submenus are displayed on hover in large screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: 6vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: black;
+  }
+
+  .menu {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #181818;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .logoHeader{
+    padding: 10px;
+    position: absolute;
+  }
+
+  .menu-item {
+    margin: 20px;
+    color: white;
+  }
+
+  .toggle-button, .back-button, .close-button {
+    display: block;
+    position: absolute;
+    font-size: 1.5rem;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .toggle-button {
+    right: 20px;
+    top: 10px;
+  }
+
+  .close-button{
+    right: 20px;
+    top: 10px;
+  }
+
+  .back-button {
+    left: 0px;
+    top: 10px;
+  }
+
+  .submenu {
+    width: 100%;
+    height: 100vh;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #181818;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .submenu.active {
+    display: flex;
+  }
+
+  .submenu div {
+    padding-left: 10px;
+  }
+}
