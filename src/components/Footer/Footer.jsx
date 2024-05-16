@@ -25,7 +25,7 @@ function Footer() {
                     </ul>
                 </div>
                 <div className="footer-column">
-                    <h3>ArchViz</h3>
+                    <h3>Archiviz</h3>
                     <ul>
                         <li><a href="#">Realistic Renderings</a></li>
                         <li><a href="#">Virtual Tours</a></li>

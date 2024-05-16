@@ -1,65 +1,40 @@
-import React, { useState, useRef } from 'react';
-import "./Section1.css"
-import image1 from "../../assets/Projetos/Seção 01/02_1-model-fm.png"
-import image2 from "../../assets/Projetos/Seção 01/02_2-bim-consulting.png"
-import image3 from "../../assets/Projetos/Seção 01/02_3-clash.png"
-import image4 from "../../assets/Projetos/Seção 01/02_4-coordination.png"
-import image5 from "../../assets/Projetos/Seção 01/02_5-detailing.png"
-import image6 from "../../assets/Projetos/Seção 01/02_6-development.png"
-import image7 from "../../assets/Projetos/Seção 01/02_7-drawing.png"
-import image8 from "../../assets/Projetos/Seção 01/02_8-point-cloud.png"
-import image9 from "../../assets/Projetos/Seção 01/02_9-rendering.png"
+import React, { useState, useEffect } from 'react';
+import './Section1.css';
+
+const imageData = [
+  { id: 1, text: 'Plugins', fileName: 'Plugin.png' },
+  { id: 2, text: 'Development for Revit', fileName: 'Template.png' },
+  { id: 3, text: 'Game Development', fileName: 'Games.png' },
+  { id: 4, text: 'Character Modeling and Animation', fileName: 'Animation.png' },
+  { id: 5, text: 'Websites Development', fileName: 'Websites.png' },
+  { id: 6, text: 'Video Edition', fileName: 'Video edition.png' },
+  { id: 7, text: 'Online Courses', fileName: 'Courses.png' },
+  { id: 8, text: 'BIM and AWP Consulting', fileName: 'Bim and Awp.png' },
+  { id: 9, text: 'Custom Team Training', fileName: 'Team training.png' },
+  { id: 10, text: 'BIM Modeling', fileName: 'Modeling.png' },
+  { id: 11, text: 'Coordination', fileName: 'Drawing.png' },
+  { id: 12, text: 'Cloud Points', fileName: 'Point Cloud.png' },
+  { id: 13, text: 'Shop Drawings and Constructive Detailings', fileName: 'Drawing.png' },
+  { id: 14, text: 'Realistic Renderings', fileName: 'Rendering.png' },
+  { id: 15, text: 'Virtual Tours', fileName: 'Virtual tour.png' },
+  { id: 16, text: 'Promotional Cinematics', fileName: 'Cinematics.png' },
+];
 
 function Section1() {
+  const [data, setData] = useState([]);
 
-  const data = [
-    {
-      id: 1,
-      text: 'Models for FM',
-      image: image1
-    },
-    {
-      id: 2,
-      text: 'BIM Consulting & Training',
-      image: image2
-    },
-    {
-      id: 3,
-      text: 'Clash Detection Reporting & Resolution',
-      image: image3
-    },
-    {
-      id: 4,
-      text: 'Coordination',
-      image: image4
-    },
-    {
-      id: 5,
-      text: 'Detailing',
-      image: image5
-    },
-    {
-      id: 6,
-      text: 'Development',
-      image: image6
-    },
-    {
-      id: 7,
-      text: 'Shop Drawings',
-      image: image7
-    },
-    {
-      id: 8,
-      text: 'Point Cloud to BIM(As-builts)',
-      image: image8
-    },
-    {
-      id: 9,
-      text: 'Renderings',
-      image: image9
-    },
+  useEffect(() => {
+    const loadData = async () => {
+      const loadedData = await Promise.all(imageData.map(async item => {
+        const image = await import(`../../assets/Projetos/Seção 01/${item.fileName}`);
+        return { ...item, image: image.default };
+      }));
+      setData(loadedData);
+    };
 
-  ];
+    loadData();
+  }, []);
+
 
     return (
       <>

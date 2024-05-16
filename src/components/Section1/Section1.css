@@ -30,7 +30,7 @@
 
 .grid-container{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     text-align: center;
     padding: 0 200px;
 }
@@ -73,7 +73,8 @@
         }
         
     .subtitle{
-        width: 100%;
+        margin: 0 auto;
+        width: 90%;
         font-size: 18px;
         word-break: break-word;
     }
@@ -92,6 +93,14 @@
     .title{
         font-size: 30px;
         }
+
+        
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        padding: 0 200px;
+    }
         
     .subtitle{
         font-size: 18px;

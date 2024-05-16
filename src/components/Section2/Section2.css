@@ -13,7 +13,7 @@
   
   .SectionContainerVideoServices {
     font-family: 'SFProDisplay', sans-serif;
-    width: 50%;
+    width: 70%;
   }
   
   .video-container {
@@ -29,8 +29,8 @@
 
   .pause-button {
     position: absolute;
-    bottom: 10%;
-    right: 10%;
+    bottom: 12.5%;
+    right: 5%;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -46,6 +46,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 10px;
     text-align: center;
+
   }
   
   .cards {
@@ -80,7 +81,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 20px 0px;
     border-radius: 10px;
   }
   
@@ -94,7 +95,7 @@
     background-color: rgb(245, 245, 245);
     color: #000;
     transform: rotateY(180deg);
-    font-size: 14px;
+    font-size: 15px;
     row-gap: 5px;
   }
   

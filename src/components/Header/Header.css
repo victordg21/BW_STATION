@@ -85,14 +85,16 @@
 
 .submenu p {
   font-weight: bolder;
-  font-size: 1.5rem;
+  font-size: 0.8rem;
+  color: gray;
 }
 
 .submenu div li {
   list-style-type: none;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-weight: normal;
   margin-top: 5px;
+  padding: 8px 0;
   
 }
 
@@ -142,7 +144,7 @@
   }
 
   .logoHeader{
-    padding: 10px;
+    padding-top: 4px;
     position: absolute;
   }
 

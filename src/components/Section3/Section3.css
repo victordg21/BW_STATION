@@ -12,7 +12,7 @@
     background-color: white;
     border-radius: 10px;
     font-family: 'SFProDisplay', sans-serif;
-    width: 50vw;
+    width: 75%;
 }
 
 .section3Container h3 {
@@ -23,39 +23,33 @@
 
 .section3 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
-    gap: 30px;
-    padding: 20px;
+    gap: 20px;
+    padding: 40px;
     background: #fff;
 }
 
 .card {
     display: flex;
-    width: 15vw;
-    height: 25vh;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    background: #000;
+    background: #171717;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 20px;
     text-align: center;
 }
 
-.card img {
-    width: 100px;
-    margin-bottom: 20px;
-}
-
 .imagesSection3 {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
+    padding: 0 40px;
 }
 
 .imagesSection3:last-child{
@@ -63,12 +57,71 @@
 }
 
 .imagesCards img {
-    width: 40vw;
+    width: 100%;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 640px) {
+    .card {
+        width: 80%; 
+        margin: 0 auto;
+    }
+
     .section3Container {
-        width: 90vw; 
+        width: 80%; 
+    }
+
+    .imagesSection3 {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .imagesCards img {
+        margin: 0 auto;
+        width: 100%;
+        padding: 10px 30px;
+    }
+
+    .section3Container h3 {
+        font-size: 1.5rem; 
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .section3 {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+
+
+
+    .imagesCards img {
+        width: 80vw; 
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1023px){
+    .card {
+        width: 50%; 
+        margin: 0 auto;
+    }
+
+    .section3Container {
+        width: 80%; 
+    }
+
+    .imagesSection3 {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .imagesCards img {
+        margin: 0 auto;
+        width: 100%;
+        padding: 10px 30px;
     }
 
     .section3Container h3 {
@@ -82,12 +135,9 @@
         gap: 20px;
     }
 
-    .card {
-        width: 70vw; 
-        height: auto;
-    }
+
 
     .imagesCards img {
-        width: 80vw; 
+        width: 80%; 
     }
 }

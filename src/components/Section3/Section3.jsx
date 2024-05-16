@@ -11,27 +11,10 @@ function Section3() {
           <h3>Who we are?</h3>
           
           <div className="section3">
-
-              <div className="card">
-                <img src="./src/assets/Projetos/Seção 03/Section3_01.png" alt="" />
-                <p>Brazilian Engineers and Architects team</p>
-              </div>
-
-              <div className="card">
-                <img src="./src/assets/Projetos/Seção 03/Section3_02.png" alt="" />
-                <p>6 years of experience in BIM modeling</p>
-              </div>
-
-              <div className="card">
-                <img src="./src/assets/Projetos/Seção 03/Section3_03.png" alt="" />
-                <p>Some American and Canadian models developed by our team</p>
-              </div>
-
-              <div className="card">
-                <img src="./src/assets/Projetos/Seção 03/Section3_04.png" alt="" /> 
-                <p>High proficiency in North American and Canadian construction</p>
-              </div>
-
+                <img className='card' src="./src/assets/Projetos/Seção 03/1.png" alt="" />
+                <img className='card' src="./src/assets/Projetos/Seção 03/2.png" alt="" />
+                <img className='card' src="./src/assets/Projetos/Seção 03/3.png" alt="" />
+                <img className='card' src="./src/assets/Projetos/Seção 03/4.png" alt="" /> 
           </div>
 
           <h3>Adaptable WorkFlow</h3>

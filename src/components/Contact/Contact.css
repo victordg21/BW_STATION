@@ -1,30 +1,35 @@
 .contact-section {
     background-color: #f9f9f9;
-    padding: 40px 20px;
+    padding: 20px 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-section h2 {
-    font-size: 2rem;
+    font-size: 24px;
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .contact-content {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-logo{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 .contact-logo img {
-    width: 100px;
+    width: 50px;
     height: auto;
-    margin-bottom: 20px;
 }
 
 .contact-info h3 {
-    font-size: 1.5rem;
+    font-size: 20px;
     color: #333;
     margin: 0;
 }
@@ -57,5 +62,11 @@
 
     .contact-info {
         text-align: left;
+    }
+}
+
+@media (max-width: 640px){
+    .contact-content {
+        display: block;
     }
 }

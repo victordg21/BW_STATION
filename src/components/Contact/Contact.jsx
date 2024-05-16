@@ -7,13 +7,11 @@ function Contact() {
             <h2>Hire those who do the work</h2>
             <div className="contact-content">
                 <div className="contact-logo">
-                    <img src="/logo.png" alt="BWStation Logo" />
+                    <img src="../src/assets/Projetos/logopreta.png" alt="BWStation Logo" />
                 </div>
                 <div className="contact-info">
-                    <h3>Tiago Costa</h3>
-                    <p>Director</p>
-                    <p>+1 305 921 4237</p>
-                    <p><a href="mailto:tiagocosta@bimworkstation.com">tiagocosta@bimworkstation.com</a></p>
+                    <p><b>Phone</b>: +1 305 921 4237</p>
+                    <p><b>E-mail</b>: tiagocosta@bimworkstation.com</p>
                 </div>
             </div>
         </section>

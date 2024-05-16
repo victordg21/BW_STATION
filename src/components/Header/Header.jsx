@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './Header.css';
 
 function Header() {
-    const [activeMenu, setActiveMenu] = useState('');
+    const [activeMenu, setActiveMenu] = useState(null);
     const [isMenuOpen, setMenuOpen] = useState(false);
     const [isSubMenuOpen, setSubMenuOpen] = useState(false);
     const [showSubMenu, setShowSubMenu] = useState(false);
@@ -17,20 +17,13 @@ function Header() {
             const menuWidth = menuRef.current.offsetWidth;
       
             const calculatedMarginLeft = (pageWidth - menuWidth) / 2;
-            console.log(pageWidth, menuWidth)
             setMarginLeft(calculatedMarginLeft);
           }
       };
-    
 
     useEffect(() => {
 
         calculateMargin();
-
-        window.addEventListener('resize', calculateMargin);
-        return () => {
-        window.removeEventListener('resize', calculateMargin);
-        };
         
         function updateDimensions() {
             const newWidth = window.innerWidth;
@@ -39,10 +32,14 @@ function Header() {
                 setShowSubMenu(false);
                 setMenuOpen(false);
             }
-            if (setSubMenuOpen(true)){
-                const width = window.innerWidth
-            }
         }
+
+        window.addEventListener('resize', calculateMargin);
+        window.addEventListener('resize', updateDimensions);
+        return () => {
+        window.removeEventListener('resize', calculateMargin);
+        window.removeEventListener('resize', updateDimensions);
+        };
         
     }, []);
 
@@ -70,10 +67,6 @@ function Header() {
             setShowSubMenu(true);
             setSubMenuOpen(true);
         }
-
-        if (isSubMenuOpen){
-            console.log('aoba');
-        } 
     };
 
     return (
@@ -92,10 +85,9 @@ function Header() {
                         <ul ref={menuRef} className={`menu ${isMenuOpen && !showSubMenu ? 'active' : ''}`}>
                         {isMenuOpen && <div className="close-button" onClick={closeMenu}>✕</div>}
 
-                            {['about', 'bim', 'archviz', 'tech', 'education', 'hub360'].map(menuItem => (
+                            {['about', 'bim', 'archiviz', 'tech', 'education', 'hub360'].map(menuItem => (
                                 <li key={menuItem} className="menu-item"
                                     onClick={() => handleMenuItemClick(menuItem)}
-                                    onMouseEnter={() => setSubmenuOpen(true)} onMouseLeave={() => setSubmenuOpen(false)}
                                     onMouseOver={() => handleMenuItemHover(menuItem)}>
                                     <a href={`#${menuItem}`}>{menuItem.toUpperCase()}</a>
                                 </li>
@@ -108,15 +100,17 @@ function Header() {
                                         <div>
                                             <p>BIM</p>
                                             <ul>
-                                                <li><a href="#building-modeling">Building Modeling and Coordination</a></li>
-                                                <li><a href="#cloud-points">Cloud Points to BIM (As-builts)</a></li>
-                                                <li><a href="#shop-drawings">Shop Drawings and Constructive Detailings</a></li>
+                                                <li><a href="#bim-modeling">BIM Modeling</a></li>
+                                                <li><a href="#coordination">Coordination</a></li>
+                                                <li><a href="#cloud-points">Cloud Points</a></li>
+                                                <li><a href="#shop-drawings">Shop Drawings</a></li>
+                                                <li><a href="#constructive-detailings">Constructive Detailings</a></li>
                                             </ul>
                                         </div>
                                     )}
-                                    {activeMenu === 'archviz' && (
+                                    {activeMenu === 'archiviz' && (
                                         <div>
-                                            <p>ARCHVIZ</p>
+                                            <p>ARCHIVIZ</p>
                                             <ul>
                                                 <li><a href="#realistic-renderings">Realistic Renderings</a></li>
                                                 <li><a href="#virtual-tours">Virtual Tours</a></li>
@@ -128,11 +122,11 @@ function Header() {
                                         <div>
                                             <p>TECH</p>
                                             <ul>
-                                                <li><a href="#plugin-development">Plugin Development for Revit</a></li>
-                                                <li><a href="#development-of-template">Development of Template, Libraries, and Families for Revit</a></li>
+                                                <li><a href="#plugins">Plugins</a></li>
+                                                <li><a href="#development">Development for Revit</a></li>
                                                 <li><a href="#game-development">Game Development</a></li>
                                                 <li><a href="#character-modeling">Character Modeling and Animation</a></li>
-                                                <li><a href="#website-development">Websites Development and Design</a></li>
+                                                <li><a href="#website-development">Websites Development</a></li>
                                                 <li><a href="#video-edition">Video Edition</a></li>
                                             </ul>
                                         </div>
