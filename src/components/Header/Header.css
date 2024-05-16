@@ -192,6 +192,7 @@
 
   .submenu.active {
     display: flex;
+    padding-left: 20px !important;
   }
 
   .submenu div {

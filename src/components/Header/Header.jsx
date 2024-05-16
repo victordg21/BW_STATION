@@ -92,6 +92,7 @@ function Header() {
                                     <a href={`#${menuItem}`}>{menuItem.toUpperCase()}</a>
                                 </li>
                             ))}
+                        </ul>
                             {showSubMenu && (
                                 <div style={{ paddingLeft: `${marginLeft - 20}px`}} className={`submenu ${isSubMenuOpen ? 'active' : ''}`} onMouseLeave={() => windowWidth > 768 && setSubMenuOpen(false)}>
                                     {windowWidth < 769 && <div className="back-button" onClick={() => setShowSubMenu(false)}>←</div>}
@@ -151,7 +152,7 @@ function Header() {
                                     )}
                                 </div>
                             )}
-                        </ul>
+                        
                     </div>
                 </div>
 
