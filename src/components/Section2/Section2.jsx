@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import "./Section2.css"
 
 function Section2() {
-  const [LoopVideo] = useState("./src/assets/Projetos/Seção 02/Vídeo-setores.mp4");
+  const [LoopVideo] = useState("/Vídeo-setores.mp4");
 
   const [isPlaying, setIsPlaying] = useState(true);
   const videoRef = useRef(null);
@@ -79,7 +79,7 @@ function Section2() {
                 >
                   <div className="card-face card-front">
                     <div className='logo-title'>
-                      <img className='black-logo' src="./src/assets/Projetos/logopreta.png" alt="Logo"/>
+                      <img className='black-logo' src="/logopreta.png" alt="Logo"/>
                       <h3 className="card-title">{card.title}</h3>
                     </div>
                     <p className="card-text">{card.text}</p>

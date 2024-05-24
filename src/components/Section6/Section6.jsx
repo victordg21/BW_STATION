@@ -6,8 +6,8 @@ function Section6() {
         <section className="partners-section">
             <h2>Our Partners</h2>
             <div className="partners-logos">
-                <img src="./src/assets/Projetos/Seção 06/esquerda.png" alt="Client 1 and 2 Logo" />
-                <img src="/src/assets/Projetos/Seção 06/direita.png" alt="Client 3 and 4 Logo" />
+                <img src="/esquerda.png" alt="Client 1 and 2 Logo" />
+                <img src="/direita.png" alt="Client 3 and 4 Logo" />
             </div>
         </section>
     );

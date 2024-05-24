@@ -26,7 +26,7 @@ function Section1() {
   useEffect(() => {
     const loadData = async () => {
       const loadedData = await Promise.all(imageData.map(async item => {
-        const image = await import(`../../assets/Projetos/Seção 01/${item.fileName}`);
+        const image = await import(`/${item.fileName}`);
         return { ...item, image: image.default };
       }));
       setData(loadedData);

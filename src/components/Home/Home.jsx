@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './Home.css';
 
 function Home() {
-  const [bgVideo, setBgVideo] = useState("./src/assets/Projetos/Home_Wide.mp4");
+  const [bgVideo, setBgVideo] = useState("/Home_Wide.mp4");
   const logoRef = useRef(null);
   const textContainerRef = useRef(null);
   const centeredTextRef = useRef(null);
@@ -10,9 +10,9 @@ function Home() {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 768) {
-        setBgVideo("./src/assets/Projetos/Home_Vertical.mp4");
+        setBgVideo("/Home_Vertical.mp4");
       } else {
-        setBgVideo("./src/assets/Projetos/Home_Wide.mp4");
+        setBgVideo("/Home_Wide.mp4");
       }
     };
 
@@ -41,7 +41,7 @@ function Home() {
 
         <div ref={centeredTextRef} className="centered-text">
             <div className="logo-container">
-                <img ref={logoRef} className="logo" src="./src/assets/Projetos/logo.png" alt="logo" />
+                <img ref={logoRef} className="logo" src="/logo.png" alt="logo" />
             </div>
             <div ref={textContainerRef} className="text-container">
                 <div className="text-bw">BW</div>

@@ -78,7 +78,7 @@ function Header() {
                     <div className='centralized-div'>
                         <div className="logoHeader">
                             <a href="#home">
-                                <img src="./src/assets/Projetos/logo.png" alt="Logo"/>
+                                <img src="/logo.png" alt="Logo"/>
                             </a>
                         </div>
 

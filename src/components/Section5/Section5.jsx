@@ -3,12 +3,12 @@ import './Section5.css';
 
 function Section5() {
   const videoRef = useRef(null);
-  const [videoSrc, setVideoSrc] = useState("./src/assets/Projetos/Seção 05/Mapa_Wide.mp4");
+  const [videoSrc, setVideoSrc] = useState("/Mapa_Wide.mp4");
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 768) {
-        setVideoSrc("./src/assets/Projetos/Seção 05/Mapa_Vertical.mp4");
+        setVideoSrc("/Mapa_Vertical.mp4");
       } 
     };
 

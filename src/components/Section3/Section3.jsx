@@ -11,10 +11,10 @@ function Section3() {
           <h3>Who we are?</h3>
           
           <div className="section3">
-                <img className='card' src="./src/assets/Projetos/Seção 03/1.png" alt="" />
-                <img className='card' src="./src/assets/Projetos/Seção 03/2.png" alt="" />
-                <img className='card' src="./src/assets/Projetos/Seção 03/3.png" alt="" />
-                <img className='card' src="./src/assets/Projetos/Seção 03/4.png" alt="" /> 
+                <img className='card' src="/BrazilianEngineers.png" alt="" />
+                <img className='card' src="/BimModeling.png" alt="" />
+                <img className='card' src="/DevelopedTeam.png" alt="" />
+                <img className='card' src="/Construction.png" alt="" /> 
           </div>
 
           <h3>Adaptable WorkFlow</h3>
@@ -22,27 +22,27 @@ function Section3() {
           <div className='imagesSection3'>
 
             <div className='imagesCards'>
-              <img src="./src/assets/Projetos/Seção 03/04_1-fast-email.png" alt="fastEmail" /> 
+              <img src="/04_1-fast-email.png" alt="fastEmail" /> 
             </div>
 
             <div className='imagesCards'>
-              <img src="./src/assets/Projetos/Seção 03/04_2-kick-off.png" alt="kickOff" /> 
+              <img src="/04_2-kick-off.png" alt="kickOff" /> 
             </div>
 
             <div className='imagesCards'>
-              <img src="./src/assets/Projetos/Seção 03/04_3-phone-calls.png" alt="phoneCalls" /> 
+              <img src="/04_3-phone-calls.png" alt="phoneCalls" /> 
             </div>
 
             <div className='imagesCards'>
-              <img src="./src/assets/Projetos/Seção 03/04_4-cloud-collaboration.png" alt="cloudCollaboration" /> 
+              <img src="/04_4-cloud-collaboration.png" alt="cloudCollaboration" /> 
             </div>
 
             <div className='imagesCards'>
-              <img src="./src/assets/Projetos/Seção 03/04_5-detailed-rfi.png" alt="detailedRfi" /> 
+              <img src="/04_5-detailed-rfi.png" alt="detailedRfi" /> 
             </div>
 
             <div className='imagesCards'>
-              <img src="./src/assets/Projetos/Seção 03/04_6-teams-chats.png" alt="temasChats" /> 
+              <img src="/04_6-teams-chats.png" alt="temasChats" /> 
             </div>
 
           </div>
