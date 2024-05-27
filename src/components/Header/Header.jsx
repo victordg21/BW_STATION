@@ -2,75 +2,73 @@ import React, { useState, useEffect, useRef } from 'react';
 import './Header.css';
 
 function Header() {
-    const [activeMenu, setActiveMenu] = useState(null);
-    const [isMenuOpen, setMenuOpen] = useState(false);
-    const [isSubMenuOpen, setSubMenuOpen] = useState(false);
-    const [showSubMenu, setShowSubMenu] = useState(false);
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-    const [marginLeft, setMarginLeft] = useState(0);
-    const menuRef = useRef(null);
+    // const [activeMenu, setActiveMenu] = useState(null);
+    // const [isMenuOpen, setMenuOpen] = useState(false);
+    // const [isSubMenuOpen, setSubMenuOpen] = useState(false);
+    // const [showSubMenu, setShowSubMenu] = useState(false);
+    // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    // const [marginLeft, setMarginLeft] = useState(0);
+    // const menuRef = useRef(null);
 
-    const calculateMargin = () => {
-        const pageWidth = window.innerWidth;
+    // const calculateMargin = () => {
+    //     const pageWidth = window.innerWidth;
 
-        if (menuRef.current) {
-            const menuWidth = menuRef.current.offsetWidth;
-            const calculatedMarginLeft = (pageWidth - menuWidth) / 2;
-            setMarginLeft(calculatedMarginLeft);
-        }
-    };
+    //     if (menuRef.current) {
+    //         const menuWidth = menuRef.current.offsetWidth;
+    //         const calculatedMarginLeft = (pageWidth - menuWidth) / 2;
+    //         setMarginLeft(calculatedMarginLeft);
+    //     }
+    // };
 
-    useEffect(() => {
-        calculateMargin();
+    // useEffect(() => {
+    //     calculateMargin();
 
-        function updateDimensions() {
-            const newWidth = window.innerWidth;
-            setWindowWidth(newWidth);
-            if (newWidth > 768) {
-                setShowSubMenu(false);
-                setMenuOpen(false);
-            }
-        }
+    //     function updateDimensions() {
+    //         const newWidth = window.innerWidth;
+    //         setWindowWidth(newWidth);
+    //         if (newWidth > 768) {
+    //             setShowSubMenu(false);
+    //             setMenuOpen(false);
+    //         }
+    //     }
 
-        window.addEventListener('resize', calculateMargin);
-        window.addEventListener('resize', updateDimensions);
-        return () => {
-            window.removeEventListener('resize', calculateMargin);
-            window.removeEventListener('resize', updateDimensions);
-        };
-    }, []);
+    //     window.addEventListener('resize', calculateMargin);
+    //     window.addEventListener('resize', updateDimensions);
+    //     return () => {
+    //         window.removeEventListener('resize', calculateMargin);
+    //         window.removeEventListener('resize', updateDimensions);
+    //     };
+    // }, []);
 
-    const toggleMenu = () => {
-        setMenuOpen(!isMenuOpen);
-        setShowSubMenu(false);
-    };
+    // const toggleMenu = () => {
+    //     setMenuOpen(!isMenuOpen);
+    //     setShowSubMenu(false);
+    // };
 
-    const closeMenu = () => {
-        setMenuOpen(false);
-        setShowSubMenu(false);
-    };
+    // const closeMenu = () => {
+    //     setMenuOpen(false);
+    //     setShowSubMenu(false);
+    // };
 
-    const handleMenuItemClick = (menu) => {
-        if (windowWidth <= 768) {
-            setActiveMenu(menu);
-            setShowSubMenu(true);
-            setSubMenuOpen(true);
-        }
-    };
+    // const handleMenuItemClick = (menu) => {
+    //     if (windowWidth <= 768) {
+    //         setActiveMenu(menu);
+    //         setShowSubMenu(true);
+    //         setSubMenuOpen(true);
+    //     }
+    // };
 
-    const handleMenuItemHover = (menu) => {
-        if (windowWidth > 768) {
-            setActiveMenu(menu);
-            setShowSubMenu(true);
-            setSubMenuOpen(true);
-        }
-    };
+    // const handleMenuItemHover = (menu) => {
+    //     if (windowWidth > 768) {
+    //         setActiveMenu(menu);
+    //         setShowSubMenu(true);
+    //         setSubMenuOpen(true);
+    //     }
+    // };
 
     return (
         <div className='ContainerHeader'>
-            <nav className={`header ${isSubMenuOpen ? 'header-bg' : ''}`}>
-                {/* !isMenuOpen && <div className="toggle-button" onClick={toggleMenu}>≡</div> */}
-                
+            <nav className={`header`}>
                 <div className='header-container'>
                     <div className='centralized-div'>
                         <div className="logoHeader">
@@ -79,7 +77,7 @@ function Header() {
                             </a>
                         </div>
 
-                        <ul ref={menuRef} className={`menu ${isMenuOpen && !showSubMenu ? 'active' : ''}`}>
+                        {/* <ul ref={menuRef} className={`menu ${isMenuOpen && !showSubMenu ? 'active' : ''}`}>
                         {isMenuOpen && <div className="close-button" onClick={closeMenu}>✕</div>}
 
                             {['about', 'bim', 'archiviz', 'tech', 'education', 'hub360'].map(menuItem => (
@@ -148,12 +146,10 @@ function Header() {
                                         </div>
                                     )}
                                 </div>
-                            )}
+                            )} */}
                         
                     </div>
                 </div>
-
-                
             </nav>
         </div>
     );
