@@ -5,7 +5,7 @@ function Footer() {
     return (
         <footer>
             <div className="footer-container">
-                <div className="footer-column">
+                {/* <div className="footer-column">
                     <h3>Tech</h3>
                     <ul>
                         <li><a href="#">Plugin Development for Revit</a></li>
@@ -46,7 +46,7 @@ function Footer() {
                     <ul>
                         <li><a href="#">Hub 360 Website</a></li>
                     </ul>
-                </div>
+                </div> */}
             </div>
 
             <div className="footer-bottom">

@@ -20,26 +20,26 @@ function Section2() {
     {
       id: 1,
       title: 'Education',
-      text: 'Especialize-se nas ferramentas mais modernas com instrutores experientes no mercado nacional e internacional.',
-      details: 'Nossos instrutores capacitarão você e sua equipe a trabalhar para disputar as melhores vagas no mercado de trabalho. Temos cursos, desde o conhecimento básico até o mais avançado voltados para todas as áreas de atuação de profissionais da engenharia civil, arquitetura e design de interiores.',
+      text: 'Specialize in the most modern tools with experienced instructors in the national and international markets.',
+      details: 'Our instructors will empower you and your team to compete for the best positions in the job market. We offer courses ranging from basic knowledge to the most advanced, aimed at all areas of civil engineering, architecture, and interior design.',
     },
     {
       id: 2,
       title: 'Tech',
-      text: 'Imagine, crie e otimize seus projetos juntamente com nossos desenvolvedores especializados nas mais diversas áreas.',
-      details: 'Otimizamos o fluxo de trabalho da sua empresa através da criação de aplicativos e plugins personalizados. Além disso, temos uma equipe especializada em desenvolvimento e design para web, edição de vídeos corporativos e promocionais, criação de personagens e games.',
+      text: 'Imagine, create, and optimize your projects together with our developers specialized in various fields.',
+      details: "We optimize your company's workflow through the creation of custom applications and plugins. Additionally, we have a specialized team for web development and design, corporate and promotional video editing, character creation, and game development.",
     },
     {
       id: 3,
       title: 'Archiviz',
-      text: 'Visualize e personalize seus projetos com nossos serviços de renderização realista e passeio virtual.',
-      details: 'Contando com as mais atuais tecnologias do mercado, desenvolvemos renderizações realistas e passeios virtuais para os seus empreendimentos. Proporcionaremos aos seus clientes uma experiência imersiva rica em detalhes, permitindo a personalização de ambientes através de ferramentas de realidade virtual.',
+      text: 'Visualize and personalize your projects with our realistic rendering and virtual tour services.',
+      details: 'Utilizing the latest technologies on the market, we develop realistic renderings and virtual tours for your projects. We provide your clients with an immersive experience rich in details, allowing for the customization of environments through virtual reality tools.',
     },
     {
       id: 4,
       title: 'Project',
-      text: 'Com as tecnologias BIM e AWP, desenvolva, coordene e gerencie projetos da sua construtora com a nossa equipe de modeladores.',
-      details: 'Nossa equipe de modeladores está preparada para atender as diversas demandas da sua construtora. Contando com mais de uma década de experiência, traremos para a sua empresa a segurança necessária para executar os seus empreendimentos, otimizando os seus processos construtivos.',
+      text: 'With BIM and AWP technologies, develop, coordinate, and manage your construction projects with our team of modelers.',
+      details: 'Our team of modelers is prepared to meet the diverse demands of your construction company. With over a decade of experience, we will bring the necessary security to your company to execute your projects, optimizing your construction processes.',
     },
   ];
 

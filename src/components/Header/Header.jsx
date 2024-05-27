@@ -15,16 +15,14 @@ function Header() {
 
         if (menuRef.current) {
             const menuWidth = menuRef.current.offsetWidth;
-      
             const calculatedMarginLeft = (pageWidth - menuWidth) / 2;
             setMarginLeft(calculatedMarginLeft);
-          }
-      };
+        }
+    };
 
     useEffect(() => {
-
         calculateMargin();
-        
+
         function updateDimensions() {
             const newWidth = window.innerWidth;
             setWindowWidth(newWidth);
@@ -37,10 +35,9 @@ function Header() {
         window.addEventListener('resize', calculateMargin);
         window.addEventListener('resize', updateDimensions);
         return () => {
-        window.removeEventListener('resize', calculateMargin);
-        window.removeEventListener('resize', updateDimensions);
+            window.removeEventListener('resize', calculateMargin);
+            window.removeEventListener('resize', updateDimensions);
         };
-        
     }, []);
 
     const toggleMenu = () => {
@@ -72,7 +69,7 @@ function Header() {
     return (
         <div className='ContainerHeader'>
             <nav className={`header ${isSubMenuOpen ? 'header-bg' : ''}`}>
-                {!isMenuOpen && <div className="toggle-button" onClick={toggleMenu}>≡</div>}
+                {/* !isMenuOpen && <div className="toggle-button" onClick={toggleMenu}>≡</div> */}
                 
                 <div className='header-container'>
                     <div className='centralized-div'>

@@ -10,8 +10,7 @@ function Contact() {
                     <img src="/logopreta.png" alt="BWStation Logo" />
                 </div>
                 <div className="contact-info">
-                    <p><b>Phone</b>: +1 305 921 4237</p>
-                    <p><b>E-mail</b>: tiagocosta@bimworkstation.com</p>
+                    <p><b>E-mail</b>: tiagocosta@bwstation.com</p>
                 </div>
             </div>
         </section>
