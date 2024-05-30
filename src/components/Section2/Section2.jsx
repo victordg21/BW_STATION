@@ -87,7 +87,7 @@ function Section2() {
                       className="card-button"
                       onClick={() => handleFlip(index)}
                     >
-                      Saiba Mais
+                      See More
                     </button>
                   </div>
                   <div className="card-face card-back">
@@ -96,7 +96,7 @@ function Section2() {
                       className="card-button"
                       onClick={() => handleFlip(index)}
                     >
-                      Voltar
+                      Back
                     </button>
                   </div>
                 </div>
